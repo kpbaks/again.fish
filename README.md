@@ -33,11 +33,9 @@ description = "again.fish"
 disabled = false
 ```
 
-gives this prompt, when again is active:
+adds the leftmost red segment, when again is active:
 
-
-
-
+![image](https://github.com/kpbaks/again.fish/assets/57013304/d5682ed6-f014-44bc-9801-cd7277e92274)
 
 ## Customization
 
