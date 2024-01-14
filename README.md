@@ -16,8 +16,8 @@ The plugin exposes a *global exported* variable called `AGAIN_ENABLED` when the 
 
 ### [starship.rs](https://starship.rs/)
 
-`starship` has a [module](https://starship.rs/config/#environment-variable) to show environment variables, dependent on whether
-the variable is defined or not. The following snippet
+`starship` has a [module](https://starship.rs/config/#environment-variable) for showing environment variables, dependent on whether
+the variable is defined or not. Using the following snippet in `~/.config/starship.toml`
 
 ```toml
 format = """
