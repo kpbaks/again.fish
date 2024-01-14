@@ -1,29 +1,32 @@
 # again.fish
 
-A [fish](https://fishshell.com/) plugin that prepulates the next prompt with the contents and cursor position of the previous prompt.
+A [fish](https://fishshell.com/) plugin that prepopulates the next prompt with the contents and cursor position of the previous prompt.
 
 ## Example Scenario
+Say you wanted to search for several different things in a directory using `grep`. Then you
+would have to type out the command and press enter. To search for the next thing you would have
+to press <kbd>up</kbd> in order to get the previous prompt. And then move your cursor to the previous
+query, delete it and the retype it. This becomes tedious very quickly. But with `again.fish` this
+type of scenario can be handled effortlessly!
+
+Say you had the following prompt, where the `|` character is the cursor position.
 
 ```fish
 grep --perl-regexp "|" **.fish
 ```
 
-press <kbd>alt+a</kbd>
-
-Then typed something like
+Press <kbd>alt+a</kbd>, and then type something like
 
 ```fish
 grep --perl-regexp "set -g|" **.fish
 ```
 
-press <kbd>enter</kbd>
-
-Then the next prompt will already be prepulated like this
+Press <kbd>enter</kbd> to execute the prompt. Then the next prompt will already be prepulated like this
 
 ```fish
 grep --perl-regexp "|" **.fish
 ```
-press <kbd>alt+a</kbd> to disable again.
+Simply press <kbd>alt+a</kbd> to disable again when you are done.
 
 <!-- TODO create video screencast -->
 
