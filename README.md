@@ -1,8 +1,31 @@
 # again.fish
 
-A [fish](https://fishshell.com/) plugin that draws a border after each command.
+A [fish](https://fishshell.com/) plugin that prepulates the next prompt with the contents and cursor position of the previous prompt.
 
-TODO create video screencast
+## Example Scenario
+
+```fish
+grep --perl-regexp "|" **.fish
+```
+
+press <kbd>alt+a</kbd>
+
+Then typed something like
+
+```fish
+grep --perl-regexp "set -g|" **.fish
+```
+
+press <kbd>enter</kbd>
+
+Then the next prompt will already be prepulated like this
+
+```fish
+grep --perl-regexp "|" **.fish
+```
+press <kbd>alt+a</kbd> to disable again.
+
+<!-- TODO create video screencast -->
 
 ## Installation
 ```fish
